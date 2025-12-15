@@ -3,20 +3,23 @@
 **Asignatura:** Adquisición y preparación de datos (UA)
 **Autores:** Stanislav Gatin, Alejandro García, Guillermo García, Rodrigo Gavilán.
 
-## 📋 Descripción del Trabajo
-Este proyecto analiza los accidentes de tráfico en la provincia de Alicante para identificar patrones de gravedad y puntos negros. Se ha realizado un proceso de ingestión de microdatos oficiales, limpieza, geocodificación y transformación a **Linked Data (RDF)** para su posterior visualización y enriquecimiento con datos demográficos externos.
+## 📋 Descripción
+Proyecto de análisis de datos para identificar patrones de letalidad en accidentes de tráfico. Se procesan microdatos de la DGT, se enriquecen con fuentes externas (Wikidata, GVA) y se generan visualizaciones geoespaciales y de flujo.
 
 ## 📂 Contenido del Repositorio
 
-### Código y Transformaciones
-* `geocodificar.py`: Script de limpieza y georreferenciación utilizando la API de ArcGIS. Filtra direcciones inválidas y asegura la precisión espacial (radio < 15km).
-* `sankey.py`: Generación de datos para el análisis de flujos (Tipo de Accidente $\to$ Gravedad) consultando el grafo RDF.
-* `map.py`: Creación del mapa interactivo híbrido. Cruza los datos de accidentes con consultas SPARQL a Wikidata (población y superficie).
+### Scripts de Procesamiento
+* **`geocodificar.py`**: Limpieza y georreferenciación. Filtra direcciones inválidas y utiliza la API de ArcGIS para validar coordenadas (score > 75).
+* **`sankey.py`**: Procesa el grafo RDF y genera el **texto plano** formateado para crear el diagrama de flujo en [SankeyMATIC](https://sankeymatic.com/).
+* **`map.py`**: Genera un mapa interactivo en formato HTML. Cruza los puntos geocodificados con los polígonos municipales y datos de Wikidata.
 
 ### Datos
-* `accidentes_cv_graph.ttl`: Dataset final transformado a RDF utilizando el vocabulario **schema.org**.
-* `municipios_cv.geojson`: Cartografía base para las visualizaciones espaciales.
+* **`municipios_cv.geojson`**: Archivo con los perímetros fronterizos de los municipios. Fuente original: *Dades Obertes Generalitat Valenciana*.
 
-## 📊 Visualizaciones Generadas
-1.  **Mapa Híbrido:** Combina un mapa de coropletas (densidad de accidentes por municipio) con la ubicación exacta de los siniestros graves y mortales.
-2.  **Diagrama de Sankey:** Visualiza la relación de causalidad entre la tipología del accidente (ej. Atropello, Salida de Vía) y la gravedad de las víctimas.
+## 📊 Visualizaciones
+1.  **Mapa Híbrido (`.html`):** Visualización generada por `map.py` que combina coropletas (densidad de accidentes por municipio) con marcadores de "puntos negros" exactos.
+2.  **Diagrama de Sankey:** Flujo de causalidad (Tipo Accidente $\to$ Gravedad) generado en SankeyMATIC a partir del output de `sankey.py`.
+
+## 🛠️ Requisitos
+```bash
+pip install pandas rdflib folium geopy SPARQLWrapper
