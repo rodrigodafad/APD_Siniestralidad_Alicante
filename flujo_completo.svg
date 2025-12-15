@@ -1,0 +1,120 @@
+<svg height="600" width="1600" xmlns="http://www.w3.org/2000/svg">
+<title>Your Diagram Title</title>
+<!-- Generated with SankeyMATIC: 12/12/2025, 1:33:44 -->
+<rect height="600" width="1600" fill="#ffffff"></rect>
+<g transform="translate(99.38483,18)">
+<g id="sankey_flows">
+<path id="flow28" d="M959.01998 198.21037C1189.77497 198.21037 1189.77497 172.23506 1420.52997 172.23506" fill="none" stroke-width="188.53808" stroke="#F39C12" opacity="0.5"><title>Día → Leve: 2,585</title></path>
+<path id="flow14" d="M483.50999 286.66394C715.26498 286.66394 715.26498 228.00449 947.01998 228.00449" fill="none" stroke-width="117.42604" stroke="#F1C40F" opacity="0.5"><title>Otro → Día: 1,610</title></path>
+<path id="flow0" d="M12 269.92384v110.42423L471.50999 378.63552v-110.42423z" fill="#27AE60" stroke-width="0.5" stroke="#27AE60" opacity="0.5"><title>Urbana → Otro: 1,514</title></path>
+<path id="flow29" d="M959.01998 390.95887C1189.77497 390.95887 1189.77497 294.87598 1420.52997 294.87598" fill="none" stroke-width="56.74376" stroke="#F39C12" opacity="0.5"><title>Noche → Leve: 778</title></path>
+<path id="flow15" d="M485.50999 67.193C716.26498 67.193 716.26498 129.35933 947.01998 129.35933" fill="none" stroke-width="50.83599" stroke="#F1C40F" opacity="0.5"><title>Choque → Día: 697</title></path>
+<path id="flow1" d="M12 159.26417C241.75499 159.26417 241.75499 248.0811 471.50999 248.0811" fill="none" stroke-width="40.26036" stroke="#2980B9" opacity="0.5"><title>Carretera → Otro: 552</title></path>
+<path id="flow2" d="M12 103.21329C242.75499 103.21329 242.75499 59.68065 473.50999 59.68065" fill="none" stroke-width="35.81129" stroke="#2980B9" opacity="0.5"><title>Carretera → Choque: 491</title></path>
+<path id="flow3" d="M12 249.17372C242.75499 249.17372 242.75499 94.54378 473.50999 94.54378" fill="none" stroke-width="33.91497" stroke="#27AE60" opacity="0.5"><title>Urbana → Choque: 465</title></path>
+<path id="flow16" d="M483.50999 361.31335C715.26498 361.31335 715.26498 403.32142 947.01998 403.32142" fill="none" stroke-width="31.87278" stroke="#2C3E50" opacity="0.5"><title>Otro → Noche: 437</title></path>
+<path id="flow4" d="M12 396.0292C242.75499 396.0292 242.75499 431.03484 473.50999 431.03484" fill="none" stroke-width="31.36223" stroke="#27AE60" opacity="0.5"><title>Urbana → Atropello: 430</title></path>
+<path id="flow17" d="M485.50999 424.83533C716.26498 424.83533 716.26498 299.62708 947.01998 299.62708" fill="none" stroke-width="25.81914" stroke="#F1C40F" opacity="0.5"><title>Atropello → Día: 354</title></path>
+<path id="flow30" d="M959.01998 302.07041C1189.77497 302.07041 1189.77497 370.72404 1420.52997 370.72404" fill="none" stroke-width="19.18202" stroke="#E74C3C" opacity="0.5"><title>Día → Grave: 263</title></path>
+<path id="flow5" d="M12 130.12647C242.75499 130.12647 242.75499 169.97565 473.50999 169.97565" fill="none" stroke-width="18.01505" stroke="#2980B9" opacity="0.5"><title>Carretera → Salida Vía: 247</title></path>
+<path id="flow18" d="M485.50999 101.36324C716.26498 101.36324 716.26498 371.33924 947.01998 371.33924" fill="none" stroke-width="17.5045" stroke="#2C3E50" opacity="0.5"><title>Choque → Noche: 240</title></path>
+<path id="flow19" d="M485.50999 168.2252C716.26498 168.2252 716.26498 162.0344 947.01998 162.0344" fill="none" stroke-width="14.51415" stroke="#F1C40F" opacity="0.5"><title>Salida Vía → Día: 199</title></path>
+<path id="flow20" d="M485.50999 441.86575C716.26498 441.86575 716.26498 423.37866 947.01998 423.37866" fill="none" stroke-width="8.2417" stroke="#2C3E50" opacity="0.5"><title>Atropello → Noche: 113</title></path>
+<path id="flow21" d="M485.50999 179.12904C716.26498 179.12904 716.26498 383.73826 947.01998 383.73826" fill="none" stroke-width="7.29354" stroke="#2C3E50" opacity="0.5"><title>Salida Vía → Noche: 100</title></path>
+<path id="flow31" d="M959.01998 480.39433C1189.77497 480.39433 1189.77497 326.8217 1420.52997 326.8217" fill="none" stroke-width="7.14767" stroke="#F39C12" opacity="0.5"><title>Crepúsculo → Leve: 98</title></path>
+<path id="flow32" d="M959.01998 422.86811C1189.77497 422.86811 1189.77497 383.85242 1420.52997 383.85242" fill="none" stroke-width="7.07474" stroke="#E74C3C" opacity="0.5"><title>Noche → Grave: 97</title></path>
+<path id="flow22" d="M483.50999 379.219C715.26498 379.219 715.26498 481.34249 947.01998 481.34249" fill="none" stroke-width="3.93851" stroke="#E74C3C" opacity="0.5"><title>Otro → Crepúsculo: 54</title></path>
+<path id="flow6" d="M12 268.02752C242.75499 268.02752 242.75499 180.87949 473.50999 180.87949" fill="none" stroke-width="3.79264" stroke="#27AE60" opacity="0.5"><title>Urbana → Salida Vía: 52</title></path>
+<path id="flow7" d="M12 181.10833C242.75499 181.10833 242.75499 413.63974 473.50999 413.63974" fill="none" stroke-width="3.42797" stroke="#2980B9" opacity="0.5"><title>Carretera → Atropello: 47</title></path>
+<path id="flow8" d="M12 464.05812C241.75499 464.05812 241.75499 379.91189 471.50999 379.91189" fill="none" stroke-width="2.55274" stroke="#95A5A6" opacity="0.5"><title>Otras Vías → Otro: 35</title></path>
+<path id="flow33" d="M959.01998 312.75545C1189.77497 312.75545 1189.77497 431.09655 1420.52997 431.09655" fill="none" stroke-width="2.18806" stroke="#000000" opacity="0.5"><title>Día → Mortal: 30</title></path>
+<path id="flow23" d="M485.50999 111.17306C716.26498 111.17306 716.26498 477.87806 947.01998 477.87806" fill="none" stroke-width="2.11513" stroke="#E74C3C" opacity="0.5"><title>Choque → Crepúsculo: 29</title></path>
+<path id="flow34" d="M959.01998 427.24424C1189.77497 427.24424 1189.77497 433.02933 1420.52997 433.02933" fill="none" stroke-width="1.67751" stroke="#000000" opacity="0.5"><title>Noche → Mortal: 23</title></path>
+<path id="flow24" d="M485.50999 446.78889C716.26498 446.78889 716.26498 484.11404 947.01998 484.11404" fill="none" stroke-width="1.60458" stroke="#E74C3C" opacity="0.5"><title>Atropello → Crepúsculo: 22</title></path>
+<path id="flow25" d="M485.50999 472.9851C716.26498 472.9851 716.26498 313.19307 947.01998 313.19307" fill="none" stroke-width="1.31284" stroke="#F1C40F" opacity="0.5"><title>Vuelco → Día: 18</title></path>
+<path id="flow9" d="M12 412.2938C242.75499 412.2938 242.75499 473.56858 473.50999 473.56858" fill="none" stroke-width="1.16697" stroke="#27AE60" opacity="0.5"><title>Urbana → Vuelco: 16</title></path>
+<path id="flow10" d="M12 465.7721C242.75499 465.7721 242.75499 447.15357 473.50999 447.15357" fill="none" stroke-width="1" stroke="#95A5A6" opacity="0.5"><title>Otras Vías → Atropello: 12</title></path>
+<path id="flow35" d="M959.01998 484.40578C1189.77497 484.40578 1189.77497 387.8274 1420.52997 387.8274" fill="none" stroke-width="1" stroke="#E74C3C" opacity="0.5"><title>Crepúsculo → Grave: 12</title></path>
+<path id="flow11" d="M12 461.97946C242.75499 461.97946 242.75499 111.86594 473.50999 111.86594" fill="none" stroke-width="1" stroke="#95A5A6" opacity="0.5"><title>Otras Vías → Choque: 10</title></path>
+<path id="flow12" d="M12 183.15052C242.75499 183.15052 242.75499 472.65689 473.50999 472.65689" fill="none" stroke-width="1" stroke="#2980B9" opacity="0.5"><title>Carretera → Vuelco: 9</title></path>
+<path id="flow26" d="M485.50999 473.93326C716.26498 473.93326 716.26498 427.79126 947.01998 427.79126" fill="none" stroke-width="1" stroke="#2C3E50" opacity="0.5"><title>Vuelco → Noche: 8</title></path>
+<path id="flow13" d="M12 462.56294C242.75499 462.56294 242.75499 182.99462 473.50999 182.99462" fill="none" stroke-width="1" stroke="#95A5A6" opacity="0.5"><title>Otras Vías → Salida Vía: 6</title></path>
+<path id="flow27" d="M485.50999 182.99462C716.26498 182.99462 716.26498 479.15443 947.01998 479.15443" fill="none" stroke-width="1" stroke="#E74C3C" opacity="0.5"><title>Salida Vía → Crepúsculo: 6</title></path>
+<path id="flow36" d="M959.01998 484.87986C1189.77497 484.87986 1189.77497 433.90456 1420.52997 433.90456" fill="none" stroke-width="1" stroke="#000000" opacity="0.5"><title>Crepúsculo → Mortal: 1</title></path>
+</g>
+<g id="sankey_nodes">
+<g class="node">
+<rect id="r0" class="for_r0" x="0" y="85.30765" height="98.17108" width="12" fill="#2980B9" fill-opacity="1"><title>Carretera:
+1,346</title></rect>
+</g>
+<g class="node">
+<rect id="r1" class="for_r1" x="0" y="232.21623" height="180.66105" width="12" fill="#27AE60" fill-opacity="1"><title>Urbana:
+2,477</title></rect>
+</g>
+<g class="node">
+<rect id="r2" class="for_r2" x="0" y="461.61478" height="4.59493" width="12" fill="#95A5A6" fill-opacity="1"><title>Otras Vías:
+63</title></rect>
+</g>
+<g class="node">
+<rect id="r3" class="for_r3" x="473.50999" y="41.775" height="70.45562" width="12" fill="#8E44AD" fill-opacity="1"><title>Choque:
+966</title></rect>
+</g>
+<g class="node">
+<rect id="r4" class="for_r4" x="473.50999" y="160.96812" height="22.2453" width="12" fill="#D35400" fill-opacity="1"><title>Salida Vía:
+305</title></rect>
+</g>
+<g class="node">
+<rect id="r5" class="for_r5" x="473.50999" y="433.92576" height="35.66542" width="12" fill="#C0392B" fill-opacity="1" transform="translate(0,-22)"><title>Atropello:
+489</title></rect>
+</g>
+<g class="node">
+<rect id="r6" class="for_r6" x="473.50999" y="518.32868" height="1.89632" width="12" fill="#E67E22" fill-opacity="1" transform="translate(0,-46)"><title>Vuelco:
+26</title></rect>
+</g>
+<g class="node">
+<rect id="r7" class="for_r7" x="473.50999" y="231.95093" height="153.23733" width="12" fill="#7F8C8D" fill-opacity="1" transform="translate(-2,-4)"><title>Otro:
+2,101</title></rect>
+</g>
+<g class="node">
+<rect id="r8" class="for_r8" x="947.01998" y="103.94133" height="209.90816" width="12" fill="#F1C40F" fill-opacity="1"><title>Día:
+2,878</title></rect>
+</g>
+<g class="node">
+<rect id="r9" class="for_r9" x="947.01998" y="362.58698" height="65.49601" width="12" fill="#2C3E50" fill-opacity="1"><title>Noche:
+898</title></rect>
+</g>
+<g class="node">
+<rect id="r10" class="for_r10" x="947.01998" y="476.8205" height="8.09583" width="12" fill="#E74C3C" fill-opacity="1"><title>Crepúsculo:
+111</title></rect>
+</g>
+<g class="node">
+<rect id="r11" class="for_r11" x="1420.52997" y="111.96603" height="252.42951" width="12" fill="#F39C12" fill-opacity="1" transform="translate(0,-34)"><title>Leve:
+3,461</title></rect>
+</g>
+<g class="node">
+<rect id="r12" class="for_r12" x="1420.52997" y="413.13304" height="27.13198" width="12" fill="#E74C3C" fill-opacity="1" transform="translate(0,-52)"><title>Grave:
+372</title></rect>
+</g>
+<g class="node">
+<rect id="r13" class="for_r13" x="1420.52997" y="489.00251" height="3.93851" width="12" fill="#000000" fill-opacity="1" transform="translate(0,-59)"><title>Mortal:
+54</title></rect>
+</g>
+</g>
+<g id="sankey_labels" font-family="sans-serif" font-size="16px" fill="#000000">
+<text text-anchor="middle" x="700.61517" y="577" font-size="12px" font-weight="400" fill="#336781">Made at SankeyMATIC.com</text>
+<text id="label0" class="for_r0" text-anchor="end" x="-6.44318" y="134.39319" font-weight="400" font-size="16px" dy="-3.92727">Carretera<tspan x="-6.44318" dy="18.4" font-weight="400" font-size="16px">1,346</tspan></text>
+<text id="label1" class="for_r1" text-anchor="end" x="-6.44318" y="322.54675" font-weight="400" font-size="16px" dy="-3.92727">Urbana<tspan x="-6.44318" dy="18.4" font-weight="400" font-size="16px">2,477</tspan></text>
+<text id="label2" class="for_r2" text-anchor="end" x="-6.44318" y="463.91224" font-weight="400" font-size="16px" dy="-3.92727">Otras Vías<tspan x="-6.44318" dy="18.4" font-weight="400" font-size="16px">63</tspan></text>
+<text id="label3" class="for_r3" text-anchor="end" x="467.06681" y="77.00281" font-weight="400" font-size="16px" dy="-3.92727">Choque<tspan x="467.06681" dy="18.4" font-weight="400" font-size="16px">966</tspan></text>
+<text id="label4" class="for_r4" text-anchor="end" x="467.06681" y="172.09077" font-weight="400" font-size="16px" dy="-3.92727">Salida Vía<tspan x="467.06681" dy="18.4" font-weight="400" font-size="16px">305</tspan></text>
+<text id="label5" class="for_r5" text-anchor="end" x="467.06681" y="451.75847" font-weight="400" font-size="16px" dy="-3.92727" transform="translate(0,-22)">Atropello<tspan x="467.06681" dy="18.4" font-weight="400" font-size="16px">489</tspan></text>
+<text id="label6" class="for_r6" text-anchor="end" x="467.06681" y="519.27684" font-weight="400" font-size="16px" dy="-3.92727" transform="translate(0,-46)">Vuelco<tspan x="467.06681" dy="18.4" font-weight="400" font-size="16px">26</tspan></text>
+<text id="label7" class="for_r7" text-anchor="end" x="467.06681" y="308.56959" font-weight="400" font-size="16px" dy="-3.92727" transform="translate(-2,-4)">Otro<tspan x="467.06681" dy="18.4" font-weight="400" font-size="16px">2,101</tspan></text>
+<text id="label8" class="for_r8" text-anchor="end" x="940.5768" y="208.89541" font-weight="400" font-size="16px" dy="-3.92727">Día<tspan x="940.5768" dy="18.4" font-weight="400" font-size="16px">2,878</tspan></text>
+<text id="label9" class="for_r9" text-anchor="end" x="940.5768" y="395.33499" font-weight="400" font-size="16px" dy="-3.92727">Noche<tspan x="940.5768" dy="18.4" font-weight="400" font-size="16px">898</tspan></text>
+<text id="label10" class="for_r10" text-anchor="end" x="940.5768" y="480.86841" font-weight="400" font-size="16px" dy="-3.92727">Crepúsculo<tspan x="940.5768" dy="18.4" font-weight="400" font-size="16px">111</tspan></text>
+<text id="label11" class="for_r11" text-anchor="start" x="1438.97315" y="238.18078" font-weight="400" font-size="16px" dy="-3.92727" transform="translate(0,-34)">Leve<tspan x="1438.97315" dy="18.4" font-weight="400" font-size="16px">3,461</tspan></text>
+<text id="label12" class="for_r12" text-anchor="start" x="1438.97315" y="426.69902" font-weight="400" font-size="16px" dy="-3.92727" transform="translate(0,-52)">Grave<tspan x="1438.97315" dy="18.4" font-weight="400" font-size="16px">372</tspan></text>
+<text id="label13" class="for_r13" text-anchor="start" x="1438.97315" y="490.97177" font-weight="400" font-size="16px" dy="-3.92727" transform="translate(0,-59)">Mortal<tspan x="1438.97315" dy="18.4" font-weight="400" font-size="16px">54</tspan></text>
+</g>
+</g></svg>

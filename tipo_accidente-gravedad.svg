@@ -1,0 +1,67 @@
+<svg height="600" width="600" xmlns="http://www.w3.org/2000/svg">
+<title>Your Diagram Title</title>
+<!-- Generated with SankeyMATIC: 12/12/2025, 2:07:59 -->
+<rect height="600" width="600" fill="#ffffff"></rect>
+<g transform="translate(96.75491,18)">
+<g id="sankey_flows">
+<path id="flow0" d="M12 384.52829C217.57993 384.52829 217.57993 214.52975 423.15985 214.52975" fill="none" stroke-width="129.82506" stroke="#F1C40F" opacity="0.5"><title>Otro → Leve: 1,780</title></path>
+<path id="flow1" d="M12 80.72641C217.57993 80.72641 217.57993 59.35963 423.15985 59.35963" fill="none" stroke-width="61.19282" stroke="#F1C40F" opacity="0.5"><title>Choque → Leve: 839</title></path>
+<path id="flow2" d="M12 174.04374C217.57993 174.04374 217.57993 104.9078 423.15985 104.9078" fill="none" stroke-width="29.90352" stroke="#F1C40F" opacity="0.5"><title>Atropello → Leve: 410</title></path>
+<path id="flow3" d="M12 254.19623C217.57993 254.19623 217.57993 134.73839 423.15985 134.73839" fill="none" stroke-width="29.75765" stroke="#F1C40F" opacity="0.5"><title>Salida Vía → Leve: 408</title></path>
+<path id="flow4" d="M12 456.58849C216.07993 456.58849 216.07993 352.11347 420.15985 352.11347" fill="none" stroke-width="14.29534" stroke="#E74C3C" opacity="0.5"><title>Otro → Grave: 196</title></path>
+<path id="flow5" d="M12 191.51178C216.07993 191.51178 216.07993 337.70872 420.15985 337.70872" fill="none" stroke-width="5.03254" stroke="#E74C3C" opacity="0.5"><title>Atropello → Grave: 69</title></path>
+<path id="flow6" d="M12 271.44546C216.07993 271.44546 216.07993 342.5954 420.15985 342.5954" fill="none" stroke-width="4.7408" stroke="#E74C3C" opacity="0.5"><title>Salida Vía → Grave: 65</title></path>
+<path id="flow7" d="M12 112.78153C216.07993 112.78153 216.07993 333.73374 420.15985 333.73374" fill="none" stroke-width="2.91742" stroke="#E74C3C" opacity="0.5"><title>Choque → Grave: 40</title></path>
+<path id="flow8" d="M12 510.8489C217.57993 510.8489 217.57993 280.3175 423.15985 280.3175" fill="none" stroke-width="1.75045" stroke="#F1C40F" opacity="0.5"><title>Vuelco → Leve: 24</title></path>
+<path id="flow9" d="M12 464.57492C217.57993 464.57492 217.57993 408.85104 423.15985 408.85104" fill="none" stroke-width="1.67751" stroke="#000000" opacity="0.5"><title>Otro → Mortal: 23</title></path>
+<path id="flow10" d="M12 274.43581C217.57993 274.43581 217.57993 407.39233 423.15985 407.39233" fill="none" stroke-width="1.2399" stroke="#000000" opacity="0.5"><title>Salida Vía → Mortal: 17</title></path>
+<path id="flow11" d="M12 194.39273C217.57993 194.39273 217.57993 406.4077 423.15985 406.4077" fill="none" stroke-width="1" stroke="#000000" opacity="0.5"><title>Atropello → Mortal: 10</title></path>
+<path id="flow12" d="M12 114.38611C217.57993 114.38611 217.57993 405.89715 423.15985 405.89715" fill="none" stroke-width="1" stroke="#000000" opacity="0.5"><title>Choque → Mortal: 4</title></path>
+<path id="flow13" d="M12 511.79706C216.07993 511.79706 216.07993 359.33408 420.15985 359.33408" fill="none" stroke-width="1" stroke="#E74C3C" opacity="0.5"><title>Vuelco → Grave: 2</title></path>
+</g>
+<g id="sankey_nodes">
+<g class="node">
+<rect id="r0" class="for_r0" x="0" y="159.09198" height="35.66542" width="12" fill="#C0392B" fill-opacity="1"><title>Atropello:
+489</title></rect>
+</g>
+<g class="node">
+<rect id="r1" class="for_r1" x="0" y="239.3174" height="35.73836" width="12" fill="#D35400" fill-opacity="1"><title>Salida Vía:
+490</title></rect>
+</g>
+<g class="node">
+<rect id="r2" class="for_r2" x="0" y="509.97368" height="1.89632" width="12" fill="#E67E22" fill-opacity="1"><title>Vuelco:
+26</title></rect>
+</g>
+<g class="node">
+<rect id="r3" class="for_r3" x="0" y="50.13" height="64.40198" width="12" fill="#8E44AD" fill-opacity="1"><title>Choque:
+883</title></rect>
+</g>
+<g class="node">
+<rect id="r4" class="for_r4" x="0" y="319.61576" height="145.79792" width="12" fill="#95A5A6" fill-opacity="1"><title>Otro:
+1,999</title></rect>
+</g>
+<g class="node">
+<rect id="r5" class="for_r5" x="423.15985" y="127.76322" height="252.42951" width="12" fill="#F1C40F" fill-opacity="1" transform="translate(0,-99)"><title>Leve:
+3,461</title></rect>
+</g>
+<g class="node">
+<rect id="r6" class="for_r6" x="423.15985" y="473.25124" height="27.13198" width="12" fill="#E74C3C" fill-opacity="1" transform="translate(-3,-140.97621)"><title>Grave:
+372</title></rect>
+</g>
+<g class="node">
+<rect id="r7" class="for_r7" x="423.15985" y="424.75273" height="3.93851" width="12" fill="#000000" fill-opacity="1" transform="translate(0,-19.00144)"><title>Mortal:
+54</title></rect>
+</g>
+</g>
+<g id="sankey_labels" font-family="sans-serif" font-size="16px" fill="#000000">
+<text text-anchor="middle" x="203.24509" y="577" font-size="12px" font-weight="400" fill="#336781">Made at SankeyMATIC.com</text>
+<text id="label0" class="for_r0" text-anchor="end" x="-6.44318" y="176.92469" font-weight="400" font-size="16px" dy="-3.92727">Atropello<tspan x="-6.44318" dy="18.4" font-weight="400" font-size="16px">489</tspan></text>
+<text id="label1" class="for_r1" text-anchor="end" x="-6.44318" y="257.18658" font-weight="400" font-size="16px" dy="-3.92727">Salida Vía<tspan x="-6.44318" dy="18.4" font-weight="400" font-size="16px">490</tspan></text>
+<text id="label2" class="for_r2" text-anchor="end" x="-6.44318" y="510.92184" font-weight="400" font-size="16px" dy="-3.92727">Vuelco<tspan x="-6.44318" dy="18.4" font-weight="400" font-size="16px">26</tspan></text>
+<text id="label3" class="for_r3" text-anchor="end" x="-6.44318" y="82.33099" font-weight="400" font-size="16px" dy="-3.92727">Choque<tspan x="-6.44318" dy="18.4" font-weight="400" font-size="16px">883</tspan></text>
+<text id="label4" class="for_r4" text-anchor="end" x="-6.44318" y="392.51472" font-weight="400" font-size="16px" dy="-3.92727">Otro<tspan x="-6.44318" dy="18.4" font-weight="400" font-size="16px">1,999</tspan></text>
+<text id="label5" class="for_r5" text-anchor="start" x="441.60303" y="253.97797" font-weight="400" font-size="16px" dy="-3.92727" transform="translate(0,-99)">Leve<tspan x="441.60303" dy="18.4" font-weight="400" font-size="16px">3,461</tspan></text>
+<text id="label6" class="for_r6" text-anchor="start" x="441.60303" y="486.81723" font-weight="400" font-size="16px" dy="-3.92727" transform="translate(-3,-140.97621)">Grave<tspan x="441.60303" dy="18.4" font-weight="400" font-size="16px">372</tspan></text>
+<text id="label7" class="for_r7" text-anchor="start" x="441.60303" y="426.72198" font-weight="400" font-size="16px" dy="-3.92727" transform="translate(0,-19.00144)">Mortal<tspan x="441.60303" dy="18.4" font-weight="400" font-size="16px">54</tspan></text>
+</g>
+</g></svg>
