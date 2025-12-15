@@ -1,4 +1,4 @@
-# 🚗 Análisis de Siniestralidad Vial en Alicante (2016-2023)
+# 🚗 Análisis de Siniestralidad Vial en Alicante (2016-2024)
 
 **Asignatura:** Adquisición y preparación de datos (UA)
 **Autores:** Stanislav Gatin, Alejandro García, Guillermo García, Rodrigo Gavilán.
@@ -20,7 +20,3 @@ Este proyecto analiza los accidentes de tráfico en la provincia de Alicante par
 ## 📊 Visualizaciones Generadas
 1.  **Mapa Híbrido:** Combina un mapa de coropletas (densidad de accidentes por municipio) con la ubicación exacta de los siniestros graves y mortales.
 2.  **Diagrama de Sankey:** Visualiza la relación de causalidad entre la tipología del accidente (ej. Atropello, Salida de Vía) y la gravedad de las víctimas.
-
-## 🛠️ Requisitos
-```bash
-pip install pandas rdflib folium geopy SPARQLWrapper
