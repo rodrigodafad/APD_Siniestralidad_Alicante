@@ -18,6 +18,25 @@ Este repositorio contiene la solución completa para identificar patrones de let
 
 ---
 
+## 🧩 Diseño del Almacén de Datos
+
+Ubicación: Carpeta `/Diseños`
+
+Este apartado recoge las diferentes fases de diseño del almacén de datos utilizadas en el proyecto, desde la abstracción inicial del problema hasta su implementación en el gestor de bases de datos. Estos diseños sirven como base para el desarrollo del proceso ETL y el posterior análisis de los datos.
+
+### 📐 Diseño Conceptual
+Define la estructura lógica del sistema desde un punto de vista abstracto, identificando la tabla de hechos y las dimensiones necesarias para el análisis de la siniestralidad vial. Este diseño permite comprender el dominio del problema y las relaciones entre los distintos elementos sin entrar en detalles técnicos.
+
+### 🧱 Diseño Lógico
+Traduce el diseño conceptual a un esquema estructurado de tablas y relaciones, siguiendo un modelo dimensional en estrella. En esta fase se definen las claves primarias y foráneas que garantizan la integridad referencial y preparan el modelo para su implementación en un SGBD.
+
+### 🗄️ Diseño Físico
+Especifica la implementación final del modelo en MySQL, incluyendo tipos de datos, índices y restricciones. Este diseño es el que se utiliza directamente en la base de datos y está optimizado para consultas analíticas y procesos ETL.
+
+Los diagramas correspondientes a cada fase pueden encontrarse en la carpeta `/Diseños`.
+
+---
+
 ## 🏗️ Módulo 1: Ingeniería de Datos (ETL)
 *Ubicación: Carpeta `/pentaho`*
 
