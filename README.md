@@ -27,13 +27,37 @@ Este apartado recoge las diferentes fases de diseño del almacén de datos utili
 ### 📐 Diseño Conceptual
 Define la estructura lógica del sistema desde un punto de vista abstracto, identificando la tabla de hechos y las dimensiones necesarias para el análisis de la siniestralidad vial. Este diseño permite comprender el dominio del problema y las relaciones entre los distintos elementos sin entrar en detalles técnicos.
 
+- Diagrama conceptual del modelo dimensional:
+  
+  ![Diseño Conceptual](Diseños/Diseño_conceptual.drawio.png)
+
+- Archivo editable del diseño conceptual:
+  
+  [Diseño_conceptual](Diseños/Diseño_conceptual)
+
 ### 🧱 Diseño Lógico
 Traduce el diseño conceptual a un esquema estructurado de tablas y relaciones, siguiendo un modelo dimensional en estrella. En esta fase se definen las claves primarias y foráneas que garantizan la integridad referencial y preparan el modelo para su implementación en un SGBD.
+
+- Diagrama lógico del esquema estrella:
+  
+  ![Diseño Lógico](Diseños/Diseño_Logico.png)
+
+- Modelo editable en MySQL Workbench:
+  
+  [Diseño_Logico.mwb](Diseños/Diseño_Logico.mwb)
 
 ### 🗄️ Diseño Físico
 Especifica la implementación final del modelo en MySQL, incluyendo tipos de datos, índices y restricciones. Este diseño es el que se utiliza directamente en la base de datos y está optimizado para consultas analíticas y procesos ETL.
 
 Los diagramas correspondientes a cada fase pueden encontrarse en la carpeta `/Diseños`.
+
+- Diagrama físico de la base de datos:
+  
+  ![Diseño Físico](Diseños/Diseño_Fisico.png)
+
+- Script SQL de creación de tablas y relaciones:
+  
+  [Diseño_Fisico.sql](Diseños/Diseño_Fisico.sql)
 
 ---
 
