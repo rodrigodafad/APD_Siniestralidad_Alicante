@@ -51,10 +51,6 @@ Especifica la implementación final del modelo en MySQL, incluyendo tipos de dat
 
 Los diagramas correspondientes a cada fase pueden encontrarse en la carpeta `/Diseños`.
 
-- Diagrama físico de la base de datos:
-  
-  ![Diseño Físico](Diseños/Diseño_Fisico.png)
-
 - Script SQL de creación de tablas y relaciones:
   
   [Diseño_Fisico.sql](Diseños/Diseño_Fisico.sql)
