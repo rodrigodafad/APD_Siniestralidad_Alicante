@@ -1,0 +1,88 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.2.6">
+  <diagram id="wjXWQzBxvJkPqCLBRpcg" name="Page-2">
+    <mxGraphModel dx="1853" dy="1023" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="RW7wFqwPOA9ex_YDMSnB-1" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Hecho_Accidente" vertex="1">
+          <mxGeometry height="150" width="173" x="45" y="166" as="geometry" />
+        </mxCell>
+        <mxCell id="RW7wFqwPOA9ex_YDMSnB-2" parent="RW7wFqwPOA9ex_YDMSnB-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="id_accidente&lt;div&gt;km&lt;/div&gt;&lt;div&gt;total_hg24h&lt;/div&gt;&lt;div&gt;total_hl24h&lt;/div&gt;&lt;div&gt;total_mu24h&lt;/div&gt;" vertex="1">
+          <mxGeometry height="143" width="158" x="7.5" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="RW7wFqwPOA9ex_YDMSnB-3" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Dim_Prioridad_Senalizacion" vertex="1">
+          <mxGeometry height="200" width="200" x="36" y="-128" as="geometry" />
+        </mxCell>
+        <mxCell id="RW7wFqwPOA9ex_YDMSnB-4" parent="RW7wFqwPOA9ex_YDMSnB-3" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="id_accidente&lt;div&gt;priori_agente&lt;/div&gt;&lt;div&gt;priori_circunstancial&lt;/div&gt;&lt;div&gt;priori_horiz_ceda&lt;/div&gt;&lt;div&gt;priori_horiz_stop&lt;/div&gt;&lt;div&gt;priori_semaforo&lt;/div&gt;&lt;div&gt;priori_vert_ceda&lt;/div&gt;&lt;div&gt;priori_vert_stop&lt;/div&gt;" vertex="1">
+          <mxGeometry height="177" width="200" x="-4.5" y="23" as="geometry" />
+        </mxCell>
+        <mxCell id="RW7wFqwPOA9ex_YDMSnB-5" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Dim_Tipo_Accidente" vertex="1">
+          <mxGeometry height="200" width="200" x="-243" y="-37" as="geometry" />
+        </mxCell>
+        <mxCell id="RW7wFqwPOA9ex_YDMSnB-6" parent="RW7wFqwPOA9ex_YDMSnB-5" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="id_accidente&lt;div&gt;tipo_accidente&lt;/div&gt;" vertex="1">
+          <mxGeometry height="178" width="200" y="11.5" as="geometry" />
+        </mxCell>
+        <mxCell id="RW7wFqwPOA9ex_YDMSnB-7" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Dim_Ubicacion" vertex="1">
+          <mxGeometry height="201" width="201" x="336" y="-37" as="geometry" />
+        </mxCell>
+        <mxCell id="RW7wFqwPOA9ex_YDMSnB-8" parent="RW7wFqwPOA9ex_YDMSnB-7" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="id_accidente&lt;div&gt;cod_municipio&lt;/div&gt;&lt;div&gt;zona&lt;/div&gt;&lt;div&gt;trazado_planta&lt;/div&gt;" vertex="1">
+          <mxGeometry height="177" width="201" y="24" as="geometry" />
+        </mxCell>
+        <mxCell id="RW7wFqwPOA9ex_YDMSnB-9" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Dim_Clima" vertex="1">
+          <mxGeometry height="201" width="201" x="340" y="246" as="geometry" />
+        </mxCell>
+        <mxCell id="RW7wFqwPOA9ex_YDMSnB-10" parent="RW7wFqwPOA9ex_YDMSnB-9" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="id_accidente&lt;div&gt;condicion_firme&lt;/div&gt;&lt;div&gt;condicion_iluminacion&lt;/div&gt;&lt;div&gt;condicion_meteo&lt;/div&gt;&lt;div&gt;condicion_niebla&lt;/div&gt;&lt;div&gt;condicion_nivel_circula&lt;/div&gt;&lt;div&gt;condicion_viento&lt;/div&gt;" vertex="1">
+          <mxGeometry height="177" width="201" y="24" as="geometry" />
+        </mxCell>
+        <mxCell id="RW7wFqwPOA9ex_YDMSnB-11" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Dim_Via" vertex="1">
+          <mxGeometry height="201" width="201" x="31" y="387" as="geometry" />
+        </mxCell>
+        <mxCell id="RW7wFqwPOA9ex_YDMSnB-12" parent="RW7wFqwPOA9ex_YDMSnB-11" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="id_accidente&lt;div&gt;carretera&lt;/div&gt;&lt;div&gt;carretera_cruce&lt;/div&gt;&lt;div&gt;sentido_1f&lt;/div&gt;&lt;div&gt;tipo_via&lt;/div&gt;&lt;div&gt;titularidad_via&lt;/div&gt;" vertex="1">
+          <mxGeometry height="177" width="201" y="24" as="geometry" />
+        </mxCell>
+        <mxCell id="RW7wFqwPOA9ex_YDMSnB-13" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Dim_Tiempo" vertex="1">
+          <mxGeometry height="201" width="201" x="-243.5" y="246" as="geometry" />
+        </mxCell>
+        <mxCell id="RW7wFqwPOA9ex_YDMSnB-14" parent="RW7wFqwPOA9ex_YDMSnB-13" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="id_accidente&lt;div&gt;anyo&lt;/div&gt;&lt;div&gt;mes&lt;/div&gt;&lt;div&gt;dia&lt;/div&gt;&lt;div&gt;hora&lt;/div&gt;" vertex="1">
+          <mxGeometry height="177" width="201" y="24" as="geometry" />
+        </mxCell>
+        <mxCell id="RW7wFqwPOA9ex_YDMSnB-16" edge="1" parent="1" source="RW7wFqwPOA9ex_YDMSnB-14" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" target="RW7wFqwPOA9ex_YDMSnB-1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-30" y="345" as="sourcePoint" />
+            <mxPoint x="20" y="295" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RW7wFqwPOA9ex_YDMSnB-17" edge="1" parent="1" source="RW7wFqwPOA9ex_YDMSnB-11" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="RW7wFqwPOA9ex_YDMSnB-2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-112" y="640" as="sourcePoint" />
+            <mxPoint x="-25" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RW7wFqwPOA9ex_YDMSnB-18" edge="1" parent="1" source="RW7wFqwPOA9ex_YDMSnB-1" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="RW7wFqwPOA9ex_YDMSnB-10" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="264" y="375" as="sourcePoint" />
+            <mxPoint x="351" y="295" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RW7wFqwPOA9ex_YDMSnB-19" edge="1" parent="1" source="RW7wFqwPOA9ex_YDMSnB-1" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="RW7wFqwPOA9ex_YDMSnB-8" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="257" y="203" as="sourcePoint" />
+            <mxPoint x="344" y="123" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RW7wFqwPOA9ex_YDMSnB-20" edge="1" parent="1" source="RW7wFqwPOA9ex_YDMSnB-1" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="RW7wFqwPOA9ex_YDMSnB-4" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="105" y="208" as="sourcePoint" />
+            <mxPoint x="192" y="128" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RW7wFqwPOA9ex_YDMSnB-21" edge="1" parent="1" source="RW7wFqwPOA9ex_YDMSnB-6" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="RW7wFqwPOA9ex_YDMSnB-1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="5" y="160" as="sourcePoint" />
+            <mxPoint x="92" y="80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
