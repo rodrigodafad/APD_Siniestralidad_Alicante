@@ -1,3 +1,4 @@
+
 import pandas as pd
 from rdflib import Graph, Literal, RDF, URIRef, Namespace
 from rdflib.namespace import XSD, RDFS, OWL
@@ -5,47 +6,25 @@ import warnings
 
 warnings.filterwarnings('ignore', category=UserWarning, module='openpyxl')
 
-df_hechos = pd.read_excel("dim_clima/hecho_accidente.xls")
-df_ubi = pd.read_excel("dim_clima/dim_ubicacion.xls", dtype={'COD_MUNICIPIO': str}) 
-df_tipo = pd.read_excel("dim_clima/dim_tipo_accidente.xls")
-df_via = pd.read_excel("dim_clima/dim_via.xls")
-df_clima = pd.read_excel("dim_clima/dim_clima.xls")
-df_tipo_senalizacion = pd.read_excel("dim_clima/dim_prioridad_senalizacion.xls")
-
-# --- 2. UNIFICACIÓN (JOIN) ---
-print("Unificando tablas...")
-df_full = df_hechos.merge(df_ubi, on="ID_ACCIDENTE") \
-                    .merge(df_tipo, on="ID_ACCIDENTE") \
-                    .merge(df_via, on="ID_ACCIDENTE") \
-                    .merge(df_clima, on="ID_ACCIDENTE") \
-                    .merge(df_tipo_senalizacion, on="ID_ACCIDENTE")
-
+df_full = pd.read_csv("dim_clima_csv/dataset_final.csv")
 
 print(f"Total de accidentes a procesar: {len(df_full)}")
 print("Columnas: ", df_full.columns)
-
 # --- 3. DICCIONARIO WIKIDATA (DESDE CSV) ---
 print("Cargando diccionario de municipios desde 'municipios_alicante.csv'...")
 
 mapa_wikidata = {}
-
 df_wiki = pd.read_csv("municipios_alicante.csv", dtype={'codigoINE': str})
 
 for index, row in df_wiki.iterrows():
-    # 1. Obtener el Q-ID limpiando la URL
-    # Viene así: http://www.wikidata.org/entity/Q11959
-    # Hacemos split por '/' y nos quedamos el último trozo -> Q11959
     url_completa = str(row['municipio'])
     q_id = url_completa.split('/')[-1]
     
-    # 2. Normalizar el Código INE a 5 dígitos
-    # Si viene "3014", lo convierte a "03014"
-    cod_ine = str(row['codigoINE'])
-
-    # 3. Guardar en el diccionario
+    # NORMALIZACIÓN: Forzar 5 dígitos (ej: '3014' -> '03014')
+    cod_ine = str(row['codigoINE']).strip().zfill(5)
     mapa_wikidata[cod_ine] = q_id
-
-
+    
+    
 g = Graph()
 
 
@@ -80,7 +59,7 @@ for prop in props_texto:
 print("Generando grafo RDF...")
 contador = 0
 for index, row in df_full.iterrows():
-    acc_id = str(row['ID_ACCIDENTE'])
+    acc_id = str(row['id'])
     
     # === A. EL EVENTO (ACCIDENTE) ===
     uri_evento = EX[f"accidente_{acc_id}"]
@@ -186,17 +165,19 @@ for index, row in df_full.iterrows():
     
     
     cod_ine = str(row['COD_MUNICIPIO']).split('.')[0]
-    
+    cod_ine = cod_ine.zfill(5)  # Aseguramos 5 dígitos
+
 
     if cod_ine in mapa_wikidata:
         wd_id = mapa_wikidata[cod_ine]
+        # Esto añadirá: ex:lugar_XXX owl:sameAs wd:Q11959
         g.add((uri_lugar, OWL.sameAs, URIRef(WD + wd_id)))
     else:
-        if cod_ine == "00000": # Ignoramos los ceros que ya sabemos que son error
-            contador +=1
+        # Si no lo encuentra, contamos para el informe final
+        contador += 1
 
 # --- 6. EXPORTAR RESULTADO ---
 archivo_salida = "accidentes_cv_graph.ttl"
 g.serialize(destination=archivo_salida, format="turtle")
 print(f"Aviso, hay un total de {contador} accidentes sin codigo INE")
-print(f"¡ÉXITO! Se ha generado el archivo: {archivo_salida}")
+print(f"Se ha generado el archivo: {archivo_salida}")
