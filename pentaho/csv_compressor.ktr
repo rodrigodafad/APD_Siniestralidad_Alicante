@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <transformation>
   <info>
-    <name>csv_compressor</name>
+    <name>all_to_one</name>
     <description/>
     <extended_description/>
     <trans_version/>
@@ -439,37 +439,107 @@
   <order>
     <hop>
       <from>Input Excel</from>
-      <to>Microsoft Excel writer</to>
+      <to>Select values</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
       <from>Input Excel 2</from>
-      <to>Microsoft Excel writer 2</to>
+      <to>Select values 2</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
       <from>Input Excel 3</from>
-      <to>Microsoft Excel writer 3</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>Input Excel 4</from>
-      <to>Microsoft Excel writer 4</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>Input Excel 5</from>
-      <to>Microsoft Excel writer 5</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>Input Excel 6</from>
-      <to>Microsoft Excel writer 6</to>
+      <to>Select values 3</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
       <from>Input Excel 7</from>
+      <to>Select values 7</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Input Excel 4</from>
+      <to>Select values 4</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Input Excel 6</from>
+      <to>Select values 6</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Input Excel 5</from>
+      <to>Select values 5</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Select values</from>
+      <to>Add sequence</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Add sequence</from>
+      <to>Microsoft Excel writer</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Select values 7</from>
+      <to>Add sequence 7</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Add sequence 7</from>
       <to>Microsoft Excel writer 7</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Select values 4</from>
+      <to>Add sequence 4</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Add sequence 4</from>
+      <to>Microsoft Excel writer 4</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Select values 2</from>
+      <to>Add sequence 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Add sequence 2</from>
+      <to>Microsoft Excel writer 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Select values 5</from>
+      <to>Add sequence 5</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Add sequence 5</from>
+      <to>Microsoft Excel writer 5</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Select values 6</from>
+      <to>Add sequence 6</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Add sequence 6</from>
+      <to>Microsoft Excel writer 6</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Select values 3</from>
+      <to>Add sequence 3</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Add sequence 3</from>
+      <to>Microsoft Excel writer 3</to>
       <enabled>Y</enabled>
     </hop>
   </order>
@@ -502,11 +572,6 @@
     <file>
       <name>C:\Users\stas\Downloads\proyecto\all</name>
       <filemask>dim_via.*\.xlsx</filemask>
-      <exclude_filemask/>
-      <file_required>N</file_required>
-      <include_subfolders>N</include_subfolders>
-      <name/>
-      <filemask/>
       <exclude_filemask/>
       <file_required>N</file_required>
       <include_subfolders>N</include_subfolders>
@@ -620,7 +685,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>160</xloc>
+      <xloc>48</xloc>
       <yloc>208</yloc>
       <draw>Y</draw>
     </GUI>
@@ -677,7 +742,31 @@
         <group/>
       </field>
       <field>
-        <name>CARRETERA</name>
+        <name>ANYO</name>
+        <type>Number</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+      </field>
+      <field>
+        <name>MES</name>
+        <type>Number</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+      </field>
+      <field>
+        <name>DIA</name>
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
@@ -689,7 +778,19 @@
         <group/>
       </field>
       <field>
-        <name>CARRETERA_CRUCE</name>
+        <name>HORA</name>
+        <type>Number</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+      </field>
+      <field>
+        <name>FRANJA_HORARIA</name>
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
@@ -701,31 +802,7 @@
         <group/>
       </field>
       <field>
-        <name>SENTIDO_1F</name>
-        <type>String</type>
-        <length>-1</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-        <repeat>N</repeat>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-      </field>
-      <field>
-        <name>TIPO_VIA</name>
-        <type>String</type>
-        <length>-1</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-        <repeat>N</repeat>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-      </field>
-      <field>
-        <name>TITULARIDAD_VIA</name>
+        <name>TIPO_DIA</name>
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
@@ -772,7 +849,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>448</xloc>
+      <xloc>432</xloc>
       <yloc>208</yloc>
       <draw>Y</draw>
     </GUI>
@@ -809,11 +886,6 @@
       <exclude_filemask/>
       <file_required>N</file_required>
       <include_subfolders>N</include_subfolders>
-      <name/>
-      <filemask/>
-      <exclude_filemask/>
-      <file_required>N</file_required>
-      <include_subfolders>N</include_subfolders>
     </file>
     <fields>
       <field>
@@ -829,7 +901,7 @@
         <group/>
       </field>
       <field>
-        <name>CARRETERA</name>
+        <name>CONDICION_FIRME</name>
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
@@ -841,7 +913,7 @@
         <group/>
       </field>
       <field>
-        <name>CARRETERA_CRUCE</name>
+        <name>CONDICION_ILUMINACION</name>
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
@@ -853,7 +925,7 @@
         <group/>
       </field>
       <field>
-        <name>SENTIDO_1F</name>
+        <name>CONDICION_METEO</name>
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
@@ -865,7 +937,7 @@
         <group/>
       </field>
       <field>
-        <name>TIPO_VIA</name>
+        <name>CONDICION_NIEBLA</name>
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
@@ -877,7 +949,19 @@
         <group/>
       </field>
       <field>
-        <name>TITULARIDAD_VIA</name>
+        <name>CONDICION_NIVEL_CIRCULA</name>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+      </field>
+      <field>
+        <name>CONDICION_VIENTO</name>
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
@@ -924,7 +1008,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>720</xloc>
+      <xloc>800</xloc>
       <yloc>208</yloc>
       <draw>Y</draw>
     </GUI>
@@ -981,7 +1065,7 @@
         <group/>
       </field>
       <field>
-        <name>CARRETERA</name>
+        <name>COD_MUNICIPIO</name>
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
@@ -993,7 +1077,7 @@
         <group/>
       </field>
       <field>
-        <name>CARRETERA_CRUCE</name>
+        <name>ZONA</name>
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
@@ -1005,31 +1089,7 @@
         <group/>
       </field>
       <field>
-        <name>SENTIDO_1F</name>
-        <type>String</type>
-        <length>-1</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-        <repeat>N</repeat>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-      </field>
-      <field>
-        <name>TIPO_VIA</name>
-        <type>String</type>
-        <length>-1</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-        <repeat>N</repeat>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-      </field>
-      <field>
-        <name>TITULARIDAD_VIA</name>
+        <name>TRAZADO_PLANTA</name>
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
@@ -1076,7 +1136,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>160</xloc>
+      <xloc>48</xloc>
       <yloc>288</yloc>
       <draw>Y</draw>
     </GUI>
@@ -1133,55 +1193,7 @@
         <group/>
       </field>
       <field>
-        <name>CARRETERA</name>
-        <type>String</type>
-        <length>-1</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-        <repeat>N</repeat>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-      </field>
-      <field>
-        <name>CARRETERA_CRUCE</name>
-        <type>String</type>
-        <length>-1</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-        <repeat>N</repeat>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-      </field>
-      <field>
-        <name>SENTIDO_1F</name>
-        <type>String</type>
-        <length>-1</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-        <repeat>N</repeat>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-      </field>
-      <field>
-        <name>TIPO_VIA</name>
-        <type>String</type>
-        <length>-1</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-        <repeat>N</repeat>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-      </field>
-      <field>
-        <name>TITULARIDAD_VIA</name>
+        <name>TIPO_ACCIDENTE</name>
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
@@ -1228,7 +1240,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>448</xloc>
+      <xloc>432</xloc>
       <yloc>288</yloc>
       <draw>Y</draw>
     </GUI>
@@ -1285,7 +1297,7 @@
         <group/>
       </field>
       <field>
-        <name>CARRETERA</name>
+        <name>PRIORI_AGENTE</name>
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
@@ -1297,7 +1309,7 @@
         <group/>
       </field>
       <field>
-        <name>CARRETERA_CRUCE</name>
+        <name>PRIORI_CIRCUNSTANCIAL</name>
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
@@ -1309,7 +1321,7 @@
         <group/>
       </field>
       <field>
-        <name>SENTIDO_1F</name>
+        <name>PRIORI_HORIZ_CEDA</name>
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
@@ -1321,7 +1333,7 @@
         <group/>
       </field>
       <field>
-        <name>TIPO_VIA</name>
+        <name>PRIORI_HORIZ_STOP</name>
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
@@ -1333,7 +1345,31 @@
         <group/>
       </field>
       <field>
-        <name>TITULARIDAD_VIA</name>
+        <name>PRIORI_SEMAFORO</name>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+      </field>
+      <field>
+        <name>PRIORI_VERT_CEDA</name>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+      </field>
+      <field>
+        <name>PRIORI_VERT_STOP</name>
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
@@ -1380,7 +1416,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>720</xloc>
+      <xloc>800</xloc>
       <yloc>288</yloc>
       <draw>Y</draw>
     </GUI>
@@ -1437,7 +1473,7 @@
         <group/>
       </field>
       <field>
-        <name>CARRETERA</name>
+        <name>KM</name>
         <type>String</type>
         <length>-1</length>
         <precision>-1</precision>
@@ -1449,8 +1485,8 @@
         <group/>
       </field>
       <field>
-        <name>CARRETERA_CRUCE</name>
-        <type>String</type>
+        <name>TOTAL_HG24H</name>
+        <type>Number</type>
         <length>-1</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
@@ -1461,8 +1497,8 @@
         <group/>
       </field>
       <field>
-        <name>SENTIDO_1F</name>
-        <type>String</type>
+        <name>TOTAL_HL24H</name>
+        <type>Number</type>
         <length>-1</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
@@ -1473,20 +1509,8 @@
         <group/>
       </field>
       <field>
-        <name>TIPO_VIA</name>
-        <type>String</type>
-        <length>-1</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-        <repeat>N</repeat>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-      </field>
-      <field>
-        <name>TITULARIDAD_VIA</name>
-        <type>String</type>
+        <name>TOTAL_MU24H</name>
+        <type>Number</type>
         <length>-1</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
@@ -1532,7 +1556,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>160</xloc>
+      <xloc>48</xloc>
       <yloc>368</yloc>
       <draw>Y</draw>
     </GUI>
@@ -1668,7 +1692,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>608</xloc>
+      <xloc>688</xloc>
       <yloc>208</yloc>
       <draw>Y</draw>
     </GUI>
@@ -1736,7 +1760,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>880</xloc>
+      <xloc>1072</xloc>
       <yloc>208</yloc>
       <draw>Y</draw>
     </GUI>
@@ -1872,7 +1896,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>608</xloc>
+      <xloc>688</xloc>
       <yloc>288</yloc>
       <draw>Y</draw>
     </GUI>
@@ -1940,7 +1964,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>880</xloc>
+      <xloc>1072</xloc>
       <yloc>288</yloc>
       <draw>Y</draw>
     </GUI>
@@ -2009,6 +2033,575 @@
     </remotesteps>
     <GUI>
       <xloc>320</xloc>
+      <yloc>368</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Select values</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>CARRETERA_CRUCE</name>
+        <rename/>
+      </field>
+      <field>
+        <name>CARRETERA</name>
+        <rename/>
+      </field>
+      <field>
+        <name>TIPO_VIA</name>
+        <rename/>
+      </field>
+      <field>
+        <name>TITULARIDAD_VIA</name>
+        <rename/>
+      </field>
+      <field>
+        <name>SENTIDO_1F</name>
+        <rename/>
+      </field>
+      <select_unspecified>N</select_unspecified>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>128</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Select values 2</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>ANYO</name>
+        <rename/>
+      </field>
+      <field>
+        <name>MES</name>
+        <rename/>
+      </field>
+      <field>
+        <name>DIA</name>
+        <rename/>
+      </field>
+      <field>
+        <name>HORA</name>
+        <rename/>
+      </field>
+      <field>
+        <name>FRANJA_HORARIA</name>
+        <rename/>
+      </field>
+      <field>
+        <name>TIPO_DIA</name>
+        <rename/>
+      </field>
+      <select_unspecified>N</select_unspecified>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>512</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Select values 3</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>CONDICION_FIRME</name>
+        <rename/>
+      </field>
+      <field>
+        <name>CONDICION_ILUMINACION</name>
+        <rename/>
+      </field>
+      <field>
+        <name>CONDICION_METEO</name>
+        <rename/>
+      </field>
+      <field>
+        <name>CONDICION_NIEBLA</name>
+        <rename/>
+      </field>
+      <field>
+        <name>CONDICION_NIVEL_CIRCULA</name>
+        <rename/>
+      </field>
+      <field>
+        <name>CONDICION_VIENTO</name>
+        <rename/>
+      </field>
+      <select_unspecified>N</select_unspecified>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>880</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Select values 4</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>COD_MUNICIPIO</name>
+        <rename/>
+      </field>
+      <field>
+        <name>TRAZADO_PLANTA</name>
+        <rename/>
+      </field>
+      <field>
+        <name>ZONA</name>
+        <rename/>
+      </field>
+      <select_unspecified>N</select_unspecified>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>128</xloc>
+      <yloc>288</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Select values 5</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>TIPO_ACCIDENTE</name>
+        <rename/>
+      </field>
+      <select_unspecified>N</select_unspecified>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>512</xloc>
+      <yloc>288</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Select values 7</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>KM</name>
+        <rename/>
+      </field>
+      <field>
+        <name>TOTAL_HL24H</name>
+        <rename/>
+      </field>
+      <field>
+        <name>TOTAL_HG24H</name>
+        <rename/>
+      </field>
+      <field>
+        <name>TOTAL_MU24H</name>
+        <rename/>
+      </field>
+      <select_unspecified>N</select_unspecified>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>128</xloc>
+      <yloc>368</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Select values 6</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>PRIORI_AGENTE</name>
+        <rename/>
+      </field>
+      <field>
+        <name>PRIORI_CIRCUNSTANCIAL</name>
+        <rename/>
+      </field>
+      <field>
+        <name>PRIORI_HORIZ_CEDA</name>
+        <rename/>
+      </field>
+      <field>
+        <name>PRIORI_HORIZ_STOP</name>
+        <rename/>
+      </field>
+      <field>
+        <name>PRIORI_SEMAFORO</name>
+        <rename/>
+      </field>
+      <field>
+        <name>PRIORI_VERT_CEDA</name>
+        <rename/>
+      </field>
+      <field>
+        <name>PRIORI_VERT_STOP</name>
+        <rename/>
+      </field>
+      <select_unspecified>N</select_unspecified>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>880</xloc>
+      <yloc>288</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Add sequence</name>
+    <type>Sequence</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <valuename>id</valuename>
+    <use_database>N</use_database>
+    <connection/>
+    <schema/>
+    <seqname>SEQ_</seqname>
+    <use_counter>Y</use_counter>
+    <counter_name/>
+    <start_at>1</start_at>
+    <increment_by>1</increment_by>
+    <max_value>999999999</max_value>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>224</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Add sequence 2</name>
+    <type>Sequence</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <valuename>id</valuename>
+    <use_database>N</use_database>
+    <connection/>
+    <schema/>
+    <seqname>SEQ_</seqname>
+    <use_counter>Y</use_counter>
+    <counter_name/>
+    <start_at>1</start_at>
+    <increment_by>1</increment_by>
+    <max_value>999999999</max_value>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>592</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Add sequence 3</name>
+    <type>Sequence</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <valuename>id</valuename>
+    <use_database>N</use_database>
+    <connection/>
+    <schema/>
+    <seqname>SEQ_</seqname>
+    <use_counter>Y</use_counter>
+    <counter_name/>
+    <start_at>1</start_at>
+    <increment_by>1</increment_by>
+    <max_value>999999999</max_value>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>976</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Add sequence 4</name>
+    <type>Sequence</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <valuename>id</valuename>
+    <use_database>N</use_database>
+    <connection/>
+    <schema/>
+    <seqname>SEQ_</seqname>
+    <use_counter>Y</use_counter>
+    <counter_name/>
+    <start_at>1</start_at>
+    <increment_by>1</increment_by>
+    <max_value>999999999</max_value>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>224</xloc>
+      <yloc>288</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Add sequence 5</name>
+    <type>Sequence</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <valuename>id</valuename>
+    <use_database>N</use_database>
+    <connection/>
+    <schema/>
+    <seqname>SEQ_</seqname>
+    <use_counter>Y</use_counter>
+    <counter_name/>
+    <start_at>1</start_at>
+    <increment_by>1</increment_by>
+    <max_value>999999999</max_value>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>592</xloc>
+      <yloc>288</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Add sequence 6</name>
+    <type>Sequence</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <valuename>id</valuename>
+    <use_database>N</use_database>
+    <connection/>
+    <schema/>
+    <seqname>SEQ_</seqname>
+    <use_counter>Y</use_counter>
+    <counter_name/>
+    <start_at>1</start_at>
+    <increment_by>1</increment_by>
+    <max_value>999999999</max_value>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>976</xloc>
+      <yloc>288</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Add sequence 7</name>
+    <type>Sequence</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <valuename>id</valuename>
+    <use_database>N</use_database>
+    <connection/>
+    <schema/>
+    <seqname>SEQ_</seqname>
+    <use_counter>Y</use_counter>
+    <counter_name/>
+    <start_at>1</start_at>
+    <increment_by>1</increment_by>
+    <max_value>999999999</max_value>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>224</xloc>
       <yloc>368</yloc>
       <draw>Y</draw>
     </GUI>
