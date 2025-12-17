@@ -1,52 +1,76 @@
 <svg height="600" width="600" xmlns="http://www.w3.org/2000/svg">
 <title>Your Diagram Title</title>
-<!-- Generated with SankeyMATIC: 12/12/2025, 2:06:58 -->
+<!-- Generated with SankeyMATIC: 17/12/2025, 22:35:24 -->
 <rect height="600" width="600" fill="#ffffff"></rect>
-<g transform="translate(99.38486,18)">
+<g transform="translate(125.57051,18)">
 <g id="sankey_flows">
-<path id="flow0" d="M12 147.3853C216.26495 147.3853 216.26495 117.60185 420.52991 117.60185" fill="none" stroke-width="161.20015" stroke="#F39C12" opacity="0.5"><title>Urbana → Leve: 2,218</title></path>
-<path id="flow1" d="M12 356.58226C216.26495 356.58226 216.26495 241.26374 420.52991 241.26374" fill="none" stroke-width="86.12362" stroke="#F39C12" opacity="0.5"><title>Carretera → Leve: 1,185</title></path>
-<path id="flow2" d="M12 236.59774C216.26495 236.59774 216.26495 329.04635 420.52991 329.04635" fill="none" stroke-width="17.22472" stroke="#E74C3C" opacity="0.5"><title>Urbana → Grave: 237</title></path>
-<path id="flow3" d="M12 404.36815C216.26495 404.36815 216.26495 342.38279 420.52991 342.38279" fill="none" stroke-width="9.44816" stroke="#E74C3C" opacity="0.5"><title>Carretera → Grave: 130</title></path>
-<path id="flow4" d="M12 488.3567C216.26495 488.3567 216.26495 286.43321 420.52991 286.43321" fill="none" stroke-width="4.21533" stroke="#F39C12" opacity="0.5"><title>Otras Vías → Leve: 58</title></path>
-<path id="flow5" d="M12 410.21874C216.26495 410.21874 216.26495 413.80263 420.52991 413.80263" fill="none" stroke-width="2.25302" stroke="#000000" opacity="0.5"><title>Carretera → Mortal: 31</title></path>
-<path id="flow6" d="M12 246.00956C216.26495 246.00956 216.26495 411.87666 420.52991 411.87666" fill="none" stroke-width="1.59892" stroke="#000000" opacity="0.5"><title>Urbana → Mortal: 22</title></path>
-<path id="flow7" d="M12 490.64606C216.26495 490.64606 216.26495 347.28857 420.52991 347.28857" fill="none" stroke-width="1" stroke="#E74C3C" opacity="0.5"><title>Otras Vías → Grave: 5</title></path>
-<path id="flow8" d="M12 490.8641C216.26495 490.8641 216.26495 414.96548 420.52991 414.96548" fill="none" stroke-width="1" stroke="#000000" opacity="0.5"><title>Otras Vías → Mortal: 1</title></path>
+<path id="flow10" d="M12 307.28466C198.48463 307.28466 198.48463 262.57288 384.96925 262.57288" fill="none" stroke-width="143.25586" stroke="#17A589" opacity="0.45"><title>Vía Municipal → Leve: 13,699</title></path>
+<path id="flow7" d="M12 58.89065C198.48463 58.89065 198.48463 129.35611 384.96925 129.35611" fill="none" stroke-width="48.15631" stroke="#1B4F72" opacity="0.45"><title>Vía Estatal → Leve: 4,605</title></path>
+<path id="flow4" d="M12 159.66309C198.48463 159.66309 198.48463 172.1896 384.96925 172.1896" fill="none" stroke-width="37.51068" stroke="#7D3C98" opacity="0.45"><title>Vía Autonómica → Leve: 3,587</title></path>
+<path id="flow9" d="M12 387.82753C198.48463 387.82753 198.48463 411.67572 384.96925 411.67572" fill="none" stroke-width="17.82986" stroke="#17A589" opacity="0.45"><title>Vía Municipal → Grave: 1,705</title></path>
+<path id="flow13" d="M12 459.58592C198.48463 459.58592 198.48463 342.96411 384.96925 342.96411" fill="none" stroke-width="17.5266" stroke="#2E86C1" opacity="0.45"><title>Vía Provincial → Leve: 1,676</title></path>
+<path id="flow6" d="M12 85.03937C198.48463 85.03937 198.48463 396.70596 384.96925 396.70596" fill="none" stroke-width="4.14113" stroke="#1B4F72" opacity="0.45"><title>Vía Estatal → Grave: 396</title></path>
+<path id="flow3" d="M12 180.41057C198.48463 180.41057 198.48463 400.76866 384.96925 400.76866" fill="none" stroke-width="3.98427" stroke="#7D3C98" opacity="0.45"><title>Vía Autonómica → Grave: 381</title></path>
+<path id="flow1" d="M12 524.98622C198.48463 524.98622 198.48463 353.43719 384.96925 353.43719" fill="none" stroke-width="3.41957" stroke="#95A5A6" opacity="0.45"><title>Otras Vías → Leve: 327</title></path>
+<path id="flow12" d="M12 469.47339C198.48463 469.47339 198.48463 421.71482 384.96925 421.71482" fill="none" stroke-width="2.24834" stroke="#2E86C1" opacity="0.45"><title>Vía Provincial → Grave: 215</title></path>
+<path id="flow11" d="M12 397.67316C198.48463 397.67316 198.48463 491.91078 384.96925 491.91078" fill="none" stroke-width="1.86142" stroke="#17A589" opacity="0.45"><title>Vía Municipal → Mortal: 178</title></path>
+<path id="flow8" d="M12 87.89947C198.48463 87.89947 198.48463 489.15526 384.96925 489.15526" fill="none" stroke-width="1.57907" stroke="#1B4F72" opacity="0.45"><title>Vía Estatal → Mortal: 151</title></path>
+<path id="flow5" d="M12 182.92034C198.48463 182.92034 198.48463 490.46243 384.96925 490.46243" fill="none" stroke-width="1.03528" stroke="#7D3C98" opacity="0.45"><title>Vía Autonómica → Mortal: 99</title></path>
+<path id="flow14" d="M12 470.82762C198.48463 470.82762 198.48463 493.07155 384.96925 493.07155" fill="none" stroke-width="1" stroke="#2E86C1" opacity="0.45"><title>Vía Provincial → Mortal: 44</title></path>
+<path id="flow0" d="M12 526.88424C198.48463 526.88424 198.48463 423.02722 384.96925 423.02722" fill="none" stroke-width="1" stroke="#95A5A6" opacity="0.45"><title>Otras Vías → Grave: 36</title></path>
+<path id="flow2" d="M12 527.12998C198.48463 527.12998 198.48463 493.35913 384.96925 493.35913" fill="none" stroke-width="1" stroke="#95A5A6" opacity="0.45"><title>Otras Vías → Mortal: 11</title></path>
 </g>
 <g id="sankey_nodes">
 <g class="node">
-<rect id="r0" class="for_r0" x="0" y="29.52043" height="97.8248" width="12" fill="#2980B9" fill-opacity="1" transform="translate(0,284.00002)"><title>Carretera:
-1,346</title></rect>
+<rect id="r0" class="for_r0" x="0" y="34.8125" height="53.8765" width="12" fill="#1B4F72" fill-opacity="1"><title>Vía Estatal:
+5,152</title></rect>
 </g>
 <g class="node">
-<rect id="r1" class="for_r1" x="0" y="216.78524" height="180.0238" width="12" fill="#27AE60" fill-opacity="1" transform="translate(0,-150.00002)"><title>Urbana:
-2,477</title></rect>
+<rect id="r1" class="for_r1" x="0" y="140.90775" height="42.53023" width="12" fill="#7D3C98" fill-opacity="1"><title>Vía Autonómica:
+4,067</title></rect>
 </g>
 <g class="node">
-<rect id="r2" class="for_r2" x="0" y="486.24903" height="4.6514" width="12" fill="#95A5A6" fill-opacity="1"><title>Otras Vías:
-64</title></rect>
+<rect id="r2" class="for_r2" x="0" y="450.82262" height="20.23506" width="12" fill="#2E86C1" fill-opacity="1"><title>Vía Provincial:
+1,935</title></rect>
 </g>
 <g class="node">
-<rect id="r3" class="for_r3" x="420.52991" y="71.09957" height="251.5391" width="12" fill="#F39C12" fill-opacity="1" transform="translate(0,-34.09779)"><title>Leve:
-3,461</title></rect>
+<rect id="r3" class="for_r3" x="0" y="235.65673" height="162.94714" width="12" fill="#17A589" fill-opacity="1"><title>Vía Municipal:
+15,582</title></rect>
 </g>
 <g class="node">
-<rect id="r4" class="for_r4" x="420.52991" y="505.44329" height="27.03627" width="12" fill="#E74C3C" fill-opacity="1" transform="translate(0,-185.0093)"><title>Grave:
-372</title></rect>
+<rect id="r4" class="for_r4" x="0" y="523.27643" height="3.91107" width="12" fill="#95A5A6" fill-opacity="1"><title>Otras Vías:
+374</title></rect>
 </g>
 <g class="node">
-<rect id="r5" class="for_r5" x="420.52991" y="412.07867" height="3.92462" width="12" fill="#000000" fill-opacity="1" transform="translate(0,-1.00147)"><title>Mortal:
-54</title></rect>
+<rect id="r5" class="for_r5" x="384.96925" y="105.27796" height="249.86902" width="12" fill="#F1C40F" fill-opacity="1"><title>Leve:
+23,894</title></rect>
+</g>
+<g class="node">
+<rect id="r6" class="for_r6" x="384.96925" y="464.63539" height="28.58006" width="12" fill="#E67E22" fill-opacity="1" transform="translate(0,-70)"><title>Grave:
+2,733</title></rect>
+</g>
+<g class="node">
+<rect id="r7" class="for_r7" x="384.96925" y="407.36572" height="5.05092" width="12" fill="#C0392B" fill-opacity="1" transform="translate(0,81)"><title>Mortal:
+483</title></rect>
 </g>
 </g>
 <g id="sankey_labels" font-family="sans-serif" font-size="16px" fill="#000000">
-<text text-anchor="middle" x="200.61514" y="577" font-size="12px" font-weight="400" fill="#336781">Made at SankeyMATIC.com</text>
-<text id="label0" class="for_r0" text-anchor="end" x="-6.44318" y="78.43284" font-weight="400" font-size="16px" dy="-3.92727" transform="translate(0,284.00002)">Carretera<tspan x="-6.44318" dy="18.4" font-weight="400" font-size="16px">1,346</tspan></text>
-<text id="label1" class="for_r1" text-anchor="end" x="-6.44318" y="306.79713" font-weight="400" font-size="16px" dy="-3.92727" transform="translate(0,-150.00002)">Urbana<tspan x="-6.44318" dy="18.4" font-weight="400" font-size="16px">2,477</tspan></text>
-<text id="label2" class="for_r2" text-anchor="end" x="-6.44318" y="488.57473" font-weight="400" font-size="16px" dy="-3.92727">Otras Vías<tspan x="-6.44318" dy="18.4" font-weight="400" font-size="16px">64</tspan></text>
-<text id="label3" class="for_r3" text-anchor="start" x="438.97309" y="196.86912" font-weight="400" font-size="16px" dy="-3.92727" transform="translate(0,-34.09779)">Leve<tspan x="438.97309" dy="18.4" font-weight="400" font-size="16px">3,461</tspan></text>
-<text id="label4" class="for_r4" text-anchor="start" x="438.97309" y="518.96143" font-weight="400" font-size="16px" dy="-3.92727" transform="translate(0,-185.0093)">Grave<tspan x="438.97309" dy="18.4" font-weight="400" font-size="16px">372</tspan></text>
-<text id="label5" class="for_r5" text-anchor="start" x="438.97309" y="414.04098" font-weight="400" font-size="16px" dy="-3.92727" transform="translate(0,-1.00147)">Mortal<tspan x="438.97309" dy="18.4" font-weight="400" font-size="16px">54</tspan></text>
+<text text-anchor="middle" x="174.42949" y="577" font-size="12px" font-weight="400" fill="#336781">Made at SankeyMATIC.com</text>
+<rect id="label0_bg" class="for_r0" x="-82.17897" y="40.39074" width="80.50852" height="41.68364" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label0" class="for_r0" text-anchor="end" x="-6.44318" y="61.75075" font-weight="400" font-size="14.4px" dy="-5.63274">Vía Estatal<tspan x="-6.44318" dy="19.32" font-weight="400" font-size="17.6px">5,152</tspan></text>
+<rect id="label1_bg" class="for_r1" x="-113.40057" y="140.81285" width="111.90008" height="41.68362" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label1" class="for_r1" text-anchor="end" x="-6.44318" y="162.17287" font-weight="400" font-size="14.4px" dy="-5.63274">Vía Autonómica<tspan x="-6.44318" dy="19.32" font-weight="400" font-size="17.6px">4,067</tspan></text>
+<rect id="label2_bg" class="for_r2" x="-100.57386" y="439.58014" width="99.10977" height="41.68362" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label2" class="for_r2" text-anchor="end" x="-6.44318" y="460.94015" font-weight="400" font-size="14.4px" dy="-5.63274">Vía Provincial<tspan x="-6.44318" dy="19.32" font-weight="400" font-size="17.6px">1,935</tspan></text>
+<rect id="label3_bg" class="for_r3" x="-98.98295" y="295.77029" width="97.31249" height="41.68365" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label3" class="for_r3" text-anchor="end" x="-6.44318" y="317.1303" font-weight="400" font-size="14.4px" dy="-5.63274">Vía Municipal<tspan x="-6.44318" dy="19.32" font-weight="400" font-size="17.6px">15,582</tspan></text>
+<rect id="label4_bg" class="for_r4" x="-79.65057" y="503.87198" width="78.04752" height="41.68362" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label4" class="for_r4" text-anchor="end" x="-6.44318" y="525.23197" font-weight="400" font-size="14.4px" dy="-5.63274">Otras Vías<tspan x="-6.44318" dy="19.32" font-weight="400" font-size="17.6px">374</tspan></text>
+<rect id="label5_bg" class="for_r5" x="398.63972" y="208.85245" width="63.78978" height="41.68364" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label5" class="for_r5" text-anchor="start" x="403.41244" y="230.21246" font-weight="400" font-size="14.4px" dy="-5.63274">Leve<tspan x="403.41244" dy="19.32" font-weight="400" font-size="17.6px">23,894</tspan></text>
+<rect id="label6_bg" class="for_r6" x="398.63972" y="457.56546" width="54.00285" height="41.68359" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0" transform="translate(0,-70)"></rect>
+<text id="label6" class="for_r6" text-anchor="start" x="403.41244" y="478.92543" font-weight="400" font-size="14.4px" dy="-5.63274" transform="translate(0,-70)">Grave<tspan x="403.41244" dy="19.32" font-weight="400" font-size="17.6px">2,733</tspan></text>
+<rect id="label7_bg" class="for_r7" x="397.73063" y="388.53116" width="50.87782" height="41.68365" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0" transform="translate(0,81)"></rect>
+<text id="label7" class="for_r7" text-anchor="start" x="403.41244" y="409.89118" font-weight="400" font-size="14.4px" dy="-5.63274" transform="translate(0,81)">Mortal<tspan x="403.41244" dy="19.32" font-weight="400" font-size="17.6px">483</tspan></text>
 </g>
 </g></svg>
